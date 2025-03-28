@@ -1,0 +1,5 @@
+ALTER TABLE BombEvent
+ALTER COLUMN playerframeid SET NOT NULL;
+
+ALTER TABLE BombEvent
+ALTER COLUMN frameid SET NOT NULL;

@@ -1,0 +1,5 @@
+ALTER TABLE flash
+ALTER COLUMN frameid SET NOT NULL;
+
+ALTER TABLE flash
+ALTER COLUMN attackerplayerframeid SET NOT NULL;

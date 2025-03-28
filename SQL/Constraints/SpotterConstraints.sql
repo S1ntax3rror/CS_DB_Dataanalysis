@@ -1,0 +1,6 @@
+ALTER TABLE spotter
+ALTER COLUMN playerid SET NOT NULL;
+
+ALTER TABLE spotter
+ALTER COLUMN playerframeid SET NOT NULL;
+

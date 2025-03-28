@@ -1,0 +1,46 @@
+CREATE TABLE IF NOT EXISTS PlayerFrame (
+    -- Primary Key --
+    playerFrameID INT,
+
+    -- Attributes --
+    x REAL,
+    y REAL,
+    z REAL,
+    viewX REAL,
+    viewY REAL,
+    velocityX REAL,
+    velocityY REAL,
+    velocityZ REAL,
+    zoomLevel INT,
+    totalUtility INT,
+    cash INT,
+    cashSpendThisRound INT,
+    cashSpendTotal INT,
+    ping INT,
+    hp SMALLINT,
+    armor SMALLINT,
+    equipmentValueFreezeTimeEnd INT,
+    equipmentValue INT,
+    equipmentValueRoundStart INT,
+    isReloading BOOLEAN,
+    isWalking BOOLEAN,
+    isPlanting BOOLEAN,
+    isDefusing BOOLEAN,
+    isDucking BOOLEAN,
+    isStanding BOOLEAN,
+    isInBombZone BOOLEAN,
+    isInBuyZone BOOLEAN,
+    isAlive BOOLEAN,
+    hasDefuse BOOLEAN,
+    hasBomb BOOLEAN,
+    hasHelmet BOOLEAN,
+    isBlinded BOOLEAN,
+    isAirborne BOOLEAN,
+    isUnDuckingInProgress BOOLEAN,
+    isDuckingInProgress BOOLEAN,
+
+    -- Foreign Keys --
+    playerGameSideID INT,
+    frameID INT,
+    activeWeaponID INT
+);

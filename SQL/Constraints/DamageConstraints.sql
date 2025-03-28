@@ -1,0 +1,2 @@
+ALTER TABLE damage
+ALTER COLUMN frameid SET NOT NULL;

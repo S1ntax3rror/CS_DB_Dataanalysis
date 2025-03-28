@@ -1,0 +1,3 @@
+ALTER TABLE projectile
+ALTER COLUMN frameid SET NOT NULL;
+

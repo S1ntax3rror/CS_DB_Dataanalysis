@@ -1,0 +1,2 @@
+ALTER TABLE kill
+ALTER COLUMN frameid SET NOT NULL;

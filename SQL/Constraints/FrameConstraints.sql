@@ -1,0 +1,2 @@
+ALTER TABLE Frame
+ALTER COLUMN gameroundid SET NOT NULL;

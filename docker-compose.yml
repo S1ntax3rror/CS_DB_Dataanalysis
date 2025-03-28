@@ -1,0 +1,26 @@
+services:
+  database:
+    container_name: CSGODatabase
+    image: postgres:15
+    shm_size: 2gb
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: CSGODatabase
+    ports:
+      - "5000:5432"
+  api:
+    container_name: CSGOAPI
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/CSGODatabase
+      - DB_HOST="CSGODatabase",
+      - DB_PORT="5432",
+      - DB_NAME="CSGODatabase",
+      - DB_USER="postgres",
+      - DB_PASS="postgres"
+    ports:
+      - "5001:5001"

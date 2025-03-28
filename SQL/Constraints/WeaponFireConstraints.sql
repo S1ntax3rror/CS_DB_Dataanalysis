@@ -1,0 +1,5 @@
+ALTER TABLE weaponfire
+ALTER COLUMN frameid SET NOT NULL;
+
+ALTER TABLE weaponfire
+ALTER COLUMN weaponid SET NOT NULL;
